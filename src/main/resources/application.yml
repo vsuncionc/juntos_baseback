@@ -1,0 +1,55 @@
+server:
+  # Puerto del servidor
+  port: 8080
+  servlet:
+    context-path: /base_back/
+spring:
+  application:
+    name: base
+  profiles:
+    active: local
+    main:
+      banner-mode: off
+
+
+  datasource:
+   url: jdbc:oracle:thin:@192.168.76.128:1521/orcl
+   username: SEGURIDAD
+   password: Suncion123
+   driver-class-name: oracle.jdbc.OracleDriver
+
+    #datasource:
+    # url: jdbc:oracle:thin:@192.168.125.195:1521/juntos
+    #username: GEO_WEB
+    #password: GeowEB852@
+    #driver-class-name: oracle.jdbc.OracleDriver
+
+    #datasource:
+    #jndi-name: jdbc/georeferencia
+    #driver-class-name: oracle.jdbc.OracleDriver
+
+  #datasource:
+   #jndi-name: jdbc/georeferenciacalidad
+   #driver-class-name: oracle.jdbc.OracleDriver
+
+logging:
+  file:
+    name: myapplication.log
+  level:
+    org.springframework: ERROR
+    com.example: DEBUG
+
+security:
+  enabled: true
+  allowed-urls-origin: http://localhost:4200,http://localhost:4300,http://192.168.125.249:8080,http://172.16.15.91:8080,http://192.168.56.1:8181,http://192.168.56.1:8080,http://172.29.48.1:7001,https://c.tile.openstreetmap.org,https://unpkg.com,http://localhost:8080
+
+  exclude-path-patterns:
+    /**/openapi/**,
+    /**/swagger-resources/**,
+    /**/webjars/swagger-resources/**,
+    /**/webjars/springfox-swagger-ui/**,
+    /**/error,
+    /**/swagger-ui.html/**,
+    /**/favicon.ico,
+    /**/actuator/**,
+    /**/actuator/
