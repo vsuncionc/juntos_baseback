@@ -1,82 +1,30 @@
-2024-10-26T21:30:06.919-05:00  INFO 27276 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Starting BaseBackApplication using Java 17.0.8.1 with PID 27276 (F:\ESPACIOS\17\base_back\target\classes started by VLADIMIR in F:\ESPACIOS\17\base_back)
-2024-10-26T21:30:06.929-05:00  INFO 27276 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : The following 1 profile is active: "local"
-2024-10-26T21:30:11.232-05:00  INFO 27276 --- [base_back] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-26T21:30:11.233-05:00  INFO 27276 --- [base_back] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-10-26T21:30:11.349-05:00  INFO 27276 --- [base_back] [restartedMain] o.a.c.c.C.[.[localhost].[/base_back]     : Initializing Spring embedded WebApplicationContext
-2024-10-26T21:30:11.889-05:00  INFO 27276 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-10-26T21:30:12.418-05:00  INFO 27276 --- [base_back] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1b1b3034
-2024-10-26T21:30:12.420-05:00  INFO 27276 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-10-26T21:30:12.471-05:00  INFO 27276 --- [base_back] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-26T21:30:12.571-05:00  INFO 27276 --- [base_back] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
-2024-10-26T21:30:12.628-05:00  INFO 27276 --- [base_back] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-10-26T21:30:13.312-05:00  WARN 27276 --- [base_back] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
-2024-10-26T21:30:14.743-05:00  INFO 27276 --- [base_back] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-10-26T21:30:17.614-05:00  INFO 27276 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Started BaseBackApplication in 12.175 seconds (process running for 14.843)
-2024-10-26T21:30:32.748-05:00  INFO 27276 --- [base_back] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-10-26T21:30:32.873-05:00  INFO 27276 --- [base_back] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-10-26T21:30:33.703-05:00  INFO 27276 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Starting BaseBackApplication using Java 17.0.8.1 with PID 27276 (F:\ESPACIOS\17\base_back\target\classes started by VLADIMIR in F:\ESPACIOS\17\base_back)
-2024-10-26T21:30:33.704-05:00  INFO 27276 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : The following 1 profile is active: "local"
-2024-10-26T21:30:35.047-05:00  INFO 27276 --- [base_back] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-26T21:30:35.047-05:00  INFO 27276 --- [base_back] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-10-26T21:30:35.144-05:00  INFO 27276 --- [base_back] [restartedMain] o.a.c.c.C.[.[localhost].[/base_back]     : Initializing Spring embedded WebApplicationContext
-2024-10-26T21:30:35.426-05:00  INFO 27276 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2024-10-26T21:30:35.527-05:00  INFO 27276 --- [base_back] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection oracle.jdbc.driver.T4CConnection@3d31d08b
-2024-10-26T21:30:35.528-05:00  INFO 27276 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2024-10-26T21:30:35.530-05:00  INFO 27276 --- [base_back] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-26T21:30:35.537-05:00  INFO 27276 --- [base_back] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-10-26T21:30:35.561-05:00  WARN 27276 --- [base_back] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
-2024-10-26T21:30:35.598-05:00  INFO 27276 --- [base_back] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-10-26T21:30:38.129-05:00  INFO 27276 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Started BaseBackApplication in 5.129 seconds (process running for 35.359)
-2024-10-26T21:30:40.535-05:00  INFO 27276 --- [base_back] [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2024-10-26T21:30:40.634-05:00  INFO 27276 --- [base_back] [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2024-10-26T21:30:41.187-05:00  INFO 27276 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Starting BaseBackApplication using Java 17.0.8.1 with PID 27276 (F:\ESPACIOS\17\base_back\target\classes started by VLADIMIR in F:\ESPACIOS\17\base_back)
-2024-10-26T21:30:41.188-05:00  INFO 27276 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : The following 1 profile is active: "local"
-2024-10-26T21:30:42.212-05:00  INFO 27276 --- [base_back] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-26T21:30:42.213-05:00  INFO 27276 --- [base_back] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-10-26T21:30:42.265-05:00  INFO 27276 --- [base_back] [restartedMain] o.a.c.c.C.[.[localhost].[/base_back]     : Initializing Spring embedded WebApplicationContext
-2024-10-26T21:30:42.489-05:00  INFO 27276 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2024-10-26T21:30:42.598-05:00  INFO 27276 --- [base_back] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection oracle.jdbc.driver.T4CConnection@67ee01d5
-2024-10-26T21:30:42.598-05:00  INFO 27276 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2024-10-26T21:30:42.600-05:00  INFO 27276 --- [base_back] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-26T21:30:42.607-05:00  INFO 27276 --- [base_back] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-10-26T21:30:42.648-05:00  WARN 27276 --- [base_back] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
-2024-10-26T21:30:42.765-05:00  INFO 27276 --- [base_back] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-10-26T21:30:45.062-05:00  INFO 27276 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Started BaseBackApplication in 4.349 seconds (process running for 42.291)
-2024-10-26T22:23:05.269-05:00  INFO 27276 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2024-10-26T22:23:05.346-05:00  INFO 27276 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
-2024-10-26T22:29:11.807-05:00  INFO 51344 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Starting BaseBackApplication using Java 17.0.8.1 with PID 51344 (F:\ESPACIOS\17\base_back\target\classes started by VLADIMIR in F:\ESPACIOS\17\base_back)
-2024-10-26T22:29:11.813-05:00  INFO 51344 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : The following 1 profile is active: "local"
-2024-10-26T22:29:16.741-05:00  INFO 51344 --- [base_back] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-26T22:29:16.741-05:00  INFO 51344 --- [base_back] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-10-26T22:29:16.857-05:00  INFO 51344 --- [base_back] [restartedMain] o.a.c.c.C.[.[localhost].[/base_back]     : Initializing Spring embedded WebApplicationContext
-2024-10-26T22:29:17.593-05:00  INFO 51344 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-10-26T22:29:18.305-05:00  INFO 51344 --- [base_back] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2b8b206d
-2024-10-26T22:29:18.310-05:00  INFO 51344 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-10-26T22:29:18.401-05:00  INFO 51344 --- [base_back] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-26T22:29:18.706-05:00  INFO 51344 --- [base_back] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
-2024-10-26T22:29:18.899-05:00  INFO 51344 --- [base_back] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-10-26T22:29:19.772-05:00  WARN 51344 --- [base_back] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
-2024-10-26T22:29:21.562-05:00  INFO 51344 --- [base_back] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-10-26T22:29:24.914-05:00  INFO 51344 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Started BaseBackApplication in 14.902 seconds (process running for 16.496)
-2024-10-26T22:29:25.622-05:00  INFO 51344 --- [base_back] [RMI TCP Connection(2)-192.168.76.1] o.a.c.c.C.[.[localhost].[/base_back]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-26T22:32:06.128-05:00  INFO 51344 --- [base_back] [http-nio-8080-exec-4] b.j.base_back.api.SeguridadController    : Ingreso la pagina princiapl
-2024-10-26T22:32:12.979-05:00  INFO 51344 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-10-26T22:32:13.043-05:00  INFO 51344 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-10-26T22:33:46.815-05:00  INFO 24908 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Starting BaseBackApplication using Java 17.0.8.1 with PID 24908 (F:\ESPACIOS\17\base_back\target\classes started by VLADIMIR in F:\ESPACIOS\17\base_back)
-2024-10-26T22:33:46.819-05:00  INFO 24908 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : The following 1 profile is active: "local"
-2024-10-26T22:33:49.981-05:00  INFO 24908 --- [base_back] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-26T22:33:49.981-05:00  INFO 24908 --- [base_back] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-10-26T22:33:50.121-05:00  INFO 24908 --- [base_back] [restartedMain] o.a.c.c.C.[.[localhost].[/base_back]     : Initializing Spring embedded WebApplicationContext
-2024-10-26T22:33:50.642-05:00  INFO 24908 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-10-26T22:33:51.001-05:00  INFO 24908 --- [base_back] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3075e932
-2024-10-26T22:33:51.004-05:00  INFO 24908 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-10-26T22:33:51.056-05:00  INFO 24908 --- [base_back] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-26T22:33:51.157-05:00  INFO 24908 --- [base_back] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
-2024-10-26T22:33:51.248-05:00  INFO 24908 --- [base_back] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-10-26T22:33:51.855-05:00  WARN 24908 --- [base_back] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
-2024-10-26T22:33:53.373-05:00  INFO 24908 --- [base_back] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-10-26T22:33:56.418-05:00  INFO 24908 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Started BaseBackApplication in 10.701 seconds (process running for 19.848)
-2024-10-26T22:34:08.202-05:00  INFO 24908 --- [base_back] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/base_back]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-26T22:34:23.712-05:00  INFO 24908 --- [base_back] [http-nio-8080-exec-3] b.j.base_back.api.SeguridadController    : Ingreso la pagina princiapl
-2024-10-26T22:35:16.360-05:00  INFO 24908 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-10-26T22:35:16.426-05:00  INFO 24908 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-04T04:19:30.468-05:00  INFO 52484 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Starting BaseBackApplication using Java 21.0.1 with PID 52484 (F:\ESPACIOS\18\juntos_baseback\target\classes started by VLADIMIR in F:\ESPACIOS\18\juntos_baseback)
+2024-11-04T04:19:30.547-05:00  INFO 52484 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : The following 1 profile is active: "local"
+2024-11-04T04:19:34.539-05:00  INFO 52484 --- [base_back] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-04T04:19:34.540-05:00  INFO 52484 --- [base_back] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-04T04:19:34.651-05:00  INFO 52484 --- [base_back] [restartedMain] o.a.c.c.C.[.[localhost].[/base_back]     : Initializing Spring embedded WebApplicationContext
+2024-11-04T04:19:35.053-05:00  INFO 52484 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-04T04:19:35.489-05:00  INFO 52484 --- [base_back] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6a5cb10d
+2024-11-04T04:19:35.492-05:00  INFO 52484 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-04T04:19:35.553-05:00  INFO 52484 --- [base_back] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-04T04:19:35.673-05:00  INFO 52484 --- [base_back] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2024-11-04T04:19:35.743-05:00  INFO 52484 --- [base_back] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-04T04:19:36.330-05:00  WARN 52484 --- [base_back] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2024-11-04T04:19:37.552-05:00  INFO 52484 --- [base_back] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-04T04:19:39.452-05:00  INFO 52484 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Started BaseBackApplication in 10.109 seconds (process running for 17.582)
+2024-11-04T04:19:39.595-05:00  INFO 52484 --- [base_back] [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/base_back]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-04T04:32:07.357-05:00  WARN 52484 --- [base_back] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 6550, SQLState: 65000
+2024-11-04T04:32:07.357-05:00 ERROR 52484 --- [base_back] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : ORA-06550: línea 1, columna 17:
+PLS-00905: object SEGURIDAD.PKG_SEGURIDAD is invalid
+ORA-06550: línea 1, columna 7:
+PL/SQL: Statement ignored
+
+2024-11-04T04:32:07.389-05:00 ERROR 52484 --- [base_back] [http-nio-8080-exec-5] b.j.b.r.Impl.UsuarioRepositoryImpl       : listaUsuariosGel 
+2024-11-04T04:32:07.401-05:00  WARN 52484 --- [base_back] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 6550, SQLState: 65000
+2024-11-04T04:32:07.401-05:00 ERROR 52484 --- [base_back] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : ORA-06550: línea 1, columna 17:
+PLS-00905: object SEGURIDAD.PKG_SEGURIDAD is invalid
+ORA-06550: línea 1, columna 7:
+PL/SQL: Statement ignored
+
+2024-11-04T04:35:04.261-05:00  INFO 52484 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-04T04:35:04.346-05:00  INFO 52484 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
