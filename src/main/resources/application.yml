@@ -13,10 +13,11 @@ spring:
 
 
   datasource:
-   url: jdbc:oracle:thin:@192.168.76.128:1521/orcl
-   username: SEGURIDAD
-   password: Suncion123
-   driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@192.168.125.8:1521/juntosqa
+    username: SITC_WEB
+    password: JUNTOS2050
+    driver-class-name: oracle.jdbc.OracleDriver
+
 
     #datasource:
     # url: jdbc:oracle:thin:@192.168.125.195:1521/juntos

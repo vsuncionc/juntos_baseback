@@ -7,7 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UsuarioRequest{
-    String usuario;
-    String clave;
+public class RevaluacionRequest {
+    String expediente;
+    String documento;
+    String descripcion;
+
 }

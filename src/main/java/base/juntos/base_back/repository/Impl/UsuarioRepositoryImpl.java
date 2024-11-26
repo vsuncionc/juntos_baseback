@@ -26,7 +26,7 @@ public class UsuarioRepositoryImpl implements UsuarioRepository {
                 .createStoredProcedureQuery(this.nombreEsquema+".PKG_SEGURIDAD.PINFOUSUARIO",Usuario.class)
                 .registerStoredProcedureParameter("P_OUT_CURSOR", Class.class, ParameterMode.REF_CURSOR)
                 .registerStoredProcedureParameter("P_IN_USUARIO", String.class,ParameterMode.IN)
-                .setParameter("P_IN_USUARIO",parametros.usuario());
+                .setParameter("P_IN_USUARIO",parametros.getUsuario());
         try {
             sp.execute();
         }catch (Exception e){

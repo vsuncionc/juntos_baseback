@@ -1,17 +1,20 @@
 package base.juntos.base_back.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @Entity
-public class Revaluacion {
-
+public class BusquedaRevaluacion {
     @Id
     @Column(name = "IDREEVALUACION")
     private long id;
@@ -19,22 +22,22 @@ public class Revaluacion {
     private String expediente;
     @Column(name = "X_DOCUMENTO")
     private String documento;
-    @Column(name = "FECHA_DOC")
+    @Column(name = "FECHADOC")
     private String fechaDocumento;
-    @Column(name = "FECHA_PROC")
+    @Column(name = "FECHAPROC")
     private String fechaProceso;
     @Column(name = "X_DESCRIPCION")
     private String descripcion;
     @Column(name = "ESTADO")
     private String estado;
     @Column(name = "N_HOGARES")
-    private int numeroHogar;
-    @Column(name = "N_HACEPTADO")
-    private int numeroAceptado;
-    @Column(name = "N_DENEGADO")
-    private int numeroDenegado;
-    @Column(name = "X_EXPEDIENTE2")
-    private String segundoExpediente;
+    private int cantidadHogares;
     @Column(name = "ABONO_GENERADO")
-    private String abonoGenerado;
+    private String abonoGnerado;
+    @Column(name = "DESPADRONPAGO")
+    private String tipoPago;
+    @Column(name = "GRUPOESQUEMA")
+    private String tipoEsquema;
+
+
 }
