@@ -1,11 +1,11 @@
 server:
   # Puerto del servidor
-  port: 8080
+  port: 8081
   servlet:
-    context-path: /base_back/
+    context-path: /seguimiento_back/v1
 spring:
   application:
-    name: base
+    name: login
   profiles:
     active: local
     main:
@@ -13,25 +13,10 @@ spring:
 
 
   datasource:
-    url: jdbc:oracle:thin:@192.168.125.8:1521/juntosqa
-    username: SITC_WEB
-    password: JUNTOS2050
-    driver-class-name: oracle.jdbc.OracleDriver
-
-
-    #datasource:
-    # url: jdbc:oracle:thin:@192.168.125.195:1521/juntos
-    #username: GEO_WEB
-    #password: GeowEB852@
-    #driver-class-name: oracle.jdbc.OracleDriver
-
-    #datasource:
-    #jndi-name: jdbc/georeferencia
-    #driver-class-name: oracle.jdbc.OracleDriver
-
-  #datasource:
-   #jndi-name: jdbc/georeferenciacalidad
-   #driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:mysql://localhost:3306/seguimiento?useSSL=false&serverTimezone=UTC
+    username: root
+    password: Suncion123
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 logging:
   file:
