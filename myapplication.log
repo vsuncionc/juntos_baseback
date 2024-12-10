@@ -1,184 +1,44 @@
-2024-12-09T16:35:35.400-05:00  INFO 15184 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 15184 (F:\ESPACIOS\25\base\target\classes started by VLADIMIR in F:\ESPACIOS\25\base)
-2024-12-09T16:35:35.409-05:00  INFO 15184 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
-2024-12-09T16:35:39.818-05:00  INFO 15184 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-09T16:35:39.818-05:00  INFO 15184 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-09T16:35:39.894-05:00  INFO 15184 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
-2024-12-09T16:35:41.260-05:00  INFO 15184 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 6.725 seconds (process running for 10.822)
-2024-12-09T16:38:41.346-05:00  INFO 15184 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 15184 (F:\ESPACIOS\25\base\target\classes started by VLADIMIR in F:\ESPACIOS\25\base)
-2024-12-09T16:38:41.347-05:00  INFO 15184 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
-2024-12-09T16:38:41.951-05:00  INFO 15184 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-09T16:38:41.952-05:00  INFO 15184 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-09T16:38:41.980-05:00  INFO 15184 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
-2024-12-09T16:38:42.185-05:00  INFO 15184 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 0.886 seconds (process running for 191.746)
-2024-12-09T16:38:44.817-05:00  INFO 15184 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 15184 (F:\ESPACIOS\25\base\target\classes started by VLADIMIR in F:\ESPACIOS\25\base)
-2024-12-09T16:38:44.818-05:00  INFO 15184 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
-2024-12-09T16:38:45.120-05:00  INFO 15184 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-09T16:38:45.120-05:00  INFO 15184 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-09T16:38:45.148-05:00  INFO 15184 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
-2024-12-09T16:38:45.358-05:00  INFO 15184 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 0.574 seconds (process running for 194.92)
-2024-12-09T16:39:19.665-05:00  INFO 15184 --- [base] [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-12-09T16:39:38.090-05:00  INFO 15184 --- [base] [http-nio-8081-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-12-09T16:39:38.345-05:00  INFO 15184 --- [base] [http-nio-8081-exec-4] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1508ec45
-2024-12-09T16:39:38.350-05:00  INFO 15184 --- [base] [http-nio-8081-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-12-09T16:40:21.323-05:00  INFO 15184 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-12-09T16:40:21.339-05:00  INFO 15184 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-12-09T16:40:25.691-05:00  INFO 15368 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 15368 (F:\ESPACIOS\25\base\target\classes started by VLADIMIR in F:\ESPACIOS\25\base)
-2024-12-09T16:40:25.694-05:00  INFO 15368 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
-2024-12-09T16:40:27.557-05:00  INFO 15368 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-09T16:40:27.557-05:00  INFO 15368 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-09T16:40:27.641-05:00  INFO 15368 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
-2024-12-09T16:40:28.382-05:00  INFO 15368 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 3.34 seconds (process running for 5.254)
-2024-12-09T16:40:36.319-05:00  INFO 15368 --- [base] [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-12-09T16:40:51.777-05:00  INFO 15368 --- [base] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-12-09T16:40:52.224-05:00  INFO 15368 --- [base] [http-nio-8081-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f7c1beb
-2024-12-09T16:40:52.253-05:00  INFO 15368 --- [base] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-12-09T16:40:56.957-05:00  INFO 15368 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-12-09T16:40:56.970-05:00  INFO 15368 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-12-09T16:43:47.890-05:00  INFO 14616 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 14616 (F:\ESPACIOS\25\base\target\classes started by VLADIMIR in F:\ESPACIOS\25\base)
-2024-12-09T16:43:47.893-05:00  INFO 14616 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
-2024-12-09T16:43:49.806-05:00  INFO 14616 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-09T16:43:49.807-05:00  INFO 14616 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-09T16:43:49.885-05:00  INFO 14616 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
-2024-12-09T16:43:50.621-05:00  INFO 14616 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 3.641 seconds (process running for 4.813)
-2024-12-09T16:44:13.909-05:00  INFO 14616 --- [base] [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-12-09T16:44:25.655-05:00  INFO 14616 --- [base] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-12-09T16:44:26.701-05:00  INFO 14616 --- [base] [http-nio-8081-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c68732e
-2024-12-09T16:44:26.712-05:00  INFO 14616 --- [base] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-12-09T16:44:46.213-05:00  INFO 14616 --- [base] [http-nio-8081-exec-1] com.base.base.api.ColegiosController     : clave=0, valor=null
-2024-12-09T16:47:45.219-05:00  INFO 14616 --- [base] [http-nio-8081-exec-5] com.base.base.api.ColegiosController     : clave=0, valor=null
-2024-12-09T16:47:47.341-05:00  INFO 14616 --- [base] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-12-09T16:47:47.384-05:00  INFO 14616 --- [base] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-12-09T16:47:47.582-05:00  INFO 14616 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 14616 (F:\ESPACIOS\25\base\target\classes started by VLADIMIR in F:\ESPACIOS\25\base)
-2024-12-09T16:47:47.583-05:00  INFO 14616 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
-2024-12-09T16:47:48.030-05:00  INFO 14616 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-09T16:47:48.030-05:00  INFO 14616 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-09T16:47:48.055-05:00  INFO 14616 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
-2024-12-09T16:47:48.296-05:00  INFO 14616 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 0.765 seconds (process running for 242.488)
-2024-12-09T16:47:49.862-05:00  INFO 14616 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 14616 (F:\ESPACIOS\25\base\target\classes started by VLADIMIR in F:\ESPACIOS\25\base)
-2024-12-09T16:47:49.862-05:00  INFO 14616 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
-2024-12-09T16:47:50.474-05:00  INFO 14616 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-09T16:47:50.478-05:00  INFO 14616 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-09T16:47:50.555-05:00  INFO 14616 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
-2024-12-09T16:47:50.752-05:00  INFO 14616 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 0.922 seconds (process running for 244.944)
-2024-12-09T17:00:43.422-05:00  INFO 14616 --- [base] [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-12-09T17:00:49.143-05:00  INFO 14616 --- [base] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2024-12-09T17:00:49.252-05:00  INFO 14616 --- [base] [http-nio-8081-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@69eb9db5
-2024-12-09T17:00:49.261-05:00  INFO 14616 --- [base] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2024-12-09T17:01:00.576-05:00  INFO 14616 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2024-12-09T17:01:00.587-05:00  INFO 14616 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2024-12-09T17:01:44.038-05:00  INFO 13200 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 13200 (F:\ESPACIOS\25\base\target\classes started by VLADIMIR in F:\ESPACIOS\25\base)
-2024-12-09T17:01:44.042-05:00  INFO 13200 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
-2024-12-09T17:01:46.201-05:00  INFO 13200 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-09T17:01:46.202-05:00  INFO 13200 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-09T17:01:46.294-05:00  INFO 13200 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
-2024-12-09T17:01:47.447-05:00  INFO 13200 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 4.832 seconds (process running for 6.204)
-2024-12-09T17:02:12.292-05:00  INFO 13200 --- [base] [http-nio-8081-exec-4] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-12-09T17:02:17.622-05:00  INFO 13200 --- [base] [http-nio-8081-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-12-09T17:02:18.678-05:00  INFO 13200 --- [base] [http-nio-8081-exec-4] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c2a5b3
-2024-12-09T17:02:18.686-05:00  INFO 13200 --- [base] [http-nio-8081-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-12-09T17:04:31.497-05:00  INFO 13200 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-12-09T17:04:31.512-05:00  INFO 13200 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-12-09T17:06:30.184-05:00  INFO 3416 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 3416 (F:\ESPACIOS\25\base\target\classes started by VLADIMIR in F:\ESPACIOS\25\base)
-2024-12-09T17:06:30.188-05:00  INFO 3416 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
-2024-12-09T17:06:32.103-05:00  INFO 3416 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-09T17:06:32.104-05:00  INFO 3416 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-09T17:06:32.185-05:00  INFO 3416 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
-2024-12-09T17:06:32.974-05:00  INFO 3416 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 3.542 seconds (process running for 4.734)
-2024-12-09T17:07:00.813-05:00  INFO 3416 --- [base] [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-12-09T17:07:00.933-05:00  INFO 3416 --- [base] [http-nio-8081-exec-1] com.base.base.api.ColegiosController     : clave=1, valor=ERROR : LA EXTENSION DEL ARCHIVO(TXT) NO ES VALIDA SOLO SE PERMITE ARCHIVO PDF
-2024-12-09T17:07:09.621-05:00  INFO 3416 --- [base] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-12-09T17:07:09.881-05:00  INFO 3416 --- [base] [http-nio-8081-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3de5a66b
-2024-12-09T17:07:09.885-05:00  INFO 3416 --- [base] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-12-09T17:09:56.435-05:00  INFO 3416 --- [base] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-12-09T17:09:56.450-05:00  INFO 3416 --- [base] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-12-09T17:09:56.610-05:00  INFO 3416 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 3416 (F:\ESPACIOS\25\base\target\classes started by VLADIMIR in F:\ESPACIOS\25\base)
-2024-12-09T17:09:56.611-05:00  INFO 3416 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
-2024-12-09T17:09:57.022-05:00  INFO 3416 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-09T17:09:57.023-05:00  INFO 3416 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-09T17:09:57.049-05:00  INFO 3416 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
-2024-12-09T17:09:57.257-05:00  INFO 3416 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 0.693 seconds (process running for 209.016)
-2024-12-09T17:09:58.854-05:00  INFO 3416 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 3416 (F:\ESPACIOS\25\base\target\classes started by VLADIMIR in F:\ESPACIOS\25\base)
-2024-12-09T17:09:58.854-05:00  INFO 3416 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
-2024-12-09T17:09:59.262-05:00  INFO 3416 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-09T17:09:59.262-05:00  INFO 3416 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-09T17:09:59.287-05:00  INFO 3416 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
-2024-12-09T17:09:59.501-05:00  INFO 3416 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 0.68 seconds (process running for 211.261)
-2024-12-09T17:10:10.026-05:00  INFO 3416 --- [base] [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-12-09T17:12:10.084-05:00  INFO 10916 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 10916 (F:\ESPACIOS\25\base\target\classes started by VLADIMIR in F:\ESPACIOS\25\base)
-2024-12-09T17:12:10.087-05:00  INFO 10916 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
-2024-12-09T17:12:12.152-05:00  INFO 10916 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-09T17:12:12.152-05:00  INFO 10916 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-09T17:12:12.253-05:00  INFO 10916 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
-2024-12-09T17:12:13.102-05:00  INFO 10916 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 3.919 seconds (process running for 5.01)
-2024-12-09T17:12:23.675-05:00  INFO 10916 --- [base] [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-12-09T17:12:23.834-05:00  INFO 10916 --- [base] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-12-09T17:12:24.078-05:00  INFO 10916 --- [base] [http-nio-8081-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d4a5c36
-2024-12-09T17:12:24.082-05:00  INFO 10916 --- [base] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-12-09T17:15:32.231-05:00  INFO 10916 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-12-09T17:15:32.367-05:00  INFO 10916 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-12-09T17:24:10.107-05:00  INFO 8880 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 8880 (F:\ESPACIOS\25\base\target\classes started by VLADIMIR in F:\ESPACIOS\25\base)
-2024-12-09T17:24:10.110-05:00  INFO 8880 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
-2024-12-09T17:24:11.833-05:00  INFO 8880 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-09T17:24:11.834-05:00  INFO 8880 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-09T17:24:11.909-05:00  INFO 8880 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
-2024-12-09T17:24:12.613-05:00  INFO 8880 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 3.191 seconds (process running for 4.223)
-2024-12-09T17:24:26.051-05:00  INFO 8880 --- [base] [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-12-09T17:24:26.251-05:00  INFO 8880 --- [base] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-12-09T17:24:26.500-05:00  INFO 8880 --- [base] [http-nio-8081-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@210331ef
-2024-12-09T17:24:26.502-05:00  INFO 8880 --- [base] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-12-09T17:25:34.911-05:00  INFO 8880 --- [base] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-12-09T17:25:34.924-05:00  INFO 8880 --- [base] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-12-09T17:25:35.124-05:00  INFO 8880 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 8880 (F:\ESPACIOS\25\base\target\classes started by VLADIMIR in F:\ESPACIOS\25\base)
-2024-12-09T17:25:35.124-05:00  INFO 8880 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
-2024-12-09T17:25:35.485-05:00  INFO 8880 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-09T17:25:35.486-05:00  INFO 8880 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-09T17:25:35.517-05:00  INFO 8880 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
-2024-12-09T17:25:35.710-05:00  INFO 8880 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 0.651 seconds (process running for 87.32)
-2024-12-09T17:25:37.311-05:00  INFO 8880 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 8880 (F:\ESPACIOS\25\base\target\classes started by VLADIMIR in F:\ESPACIOS\25\base)
-2024-12-09T17:25:37.312-05:00  INFO 8880 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
-2024-12-09T17:25:37.658-05:00  INFO 8880 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-09T17:25:37.659-05:00  INFO 8880 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-09T17:25:37.684-05:00  INFO 8880 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
-2024-12-09T17:25:37.867-05:00  INFO 8880 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 0.586 seconds (process running for 89.477)
-2024-12-09T17:25:39.837-05:00  INFO 8880 --- [base] [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-12-09T17:25:39.876-05:00  INFO 8880 --- [base] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2024-12-09T17:25:39.887-05:00  INFO 8880 --- [base] [http-nio-8081-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@587a1e1d
-2024-12-09T17:25:39.888-05:00  INFO 8880 --- [base] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2024-12-09T18:38:32.879-05:00  INFO 8880 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2024-12-09T18:38:32.943-05:00  INFO 8880 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2024-12-09T19:33:53.063-05:00  INFO 16744 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 16744 (F:\ESPACIOS\25\base\target\classes started by VLADIMIR in F:\ESPACIOS\25\base)
-2024-12-09T19:33:53.067-05:00  INFO 16744 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
-2024-12-09T19:33:54.995-05:00  INFO 16744 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-09T19:33:54.996-05:00  INFO 16744 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-09T19:33:55.087-05:00  INFO 16744 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
-2024-12-09T19:33:55.861-05:00  INFO 16744 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 3.657 seconds (process running for 5.13)
-2024-12-09T19:34:16.082-05:00  INFO 16744 --- [base] [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-12-09T19:34:16.212-05:00  INFO 16744 --- [base] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-12-09T19:34:16.542-05:00  INFO 16744 --- [base] [http-nio-8081-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@202a0124
-2024-12-09T19:34:16.546-05:00  INFO 16744 --- [base] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-12-09T19:45:43.231-05:00  INFO 16744 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-12-09T19:45:43.345-05:00  INFO 16744 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-12-09T19:48:17.549-05:00  INFO 5980 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 5980 (F:\ESPACIOS\25\base\target\classes started by VLADIMIR in F:\ESPACIOS\25\base)
-2024-12-09T19:48:17.553-05:00  INFO 5980 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
-2024-12-09T19:48:19.350-05:00  INFO 5980 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-09T19:48:19.350-05:00  INFO 5980 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-09T19:48:19.432-05:00  INFO 5980 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
-2024-12-09T19:48:20.143-05:00  INFO 5980 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 3.341 seconds (process running for 4.679)
-2024-12-09T19:48:22.916-05:00  INFO 5980 --- [base] [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-12-09T19:48:23.052-05:00  INFO 5980 --- [base] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-12-09T19:48:23.282-05:00  INFO 5980 --- [base] [http-nio-8081-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1dc6ca76
-2024-12-09T19:48:23.286-05:00  INFO 5980 --- [base] [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-12-09T19:48:29.971-05:00  INFO 5980 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-12-09T19:48:29.981-05:00  INFO 5980 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-12-09T20:05:31.067-05:00  INFO 9524 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 9524 (F:\ESPACIOS\25\base\target\classes started by VLADIMIR in F:\ESPACIOS\25\base)
-2024-12-09T20:05:31.071-05:00  INFO 9524 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
-2024-12-09T20:05:33.402-05:00  INFO 9524 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-09T20:05:33.403-05:00  INFO 9524 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-09T20:05:33.484-05:00  INFO 9524 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
-2024-12-09T20:05:34.274-05:00  INFO 9524 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 4.207 seconds (process running for 5.224)
-2024-12-09T20:05:41.669-05:00  INFO 9524 --- [base] [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-12-09T20:05:41.759-05:00  INFO 9524 --- [base] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-12-09T20:05:42.054-05:00  INFO 9524 --- [base] [http-nio-8081-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18c17a51
-2024-12-09T20:05:42.059-05:00  INFO 9524 --- [base] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-12-09T20:34:12.760-05:00  INFO 9524 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-12-09T20:34:12.909-05:00  INFO 9524 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-10T05:42:00.694-05:00  INFO 15344 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 15344 (F:\ESPACIOS\26\juntos_baseback\target\classes started by VLADIMIR in F:\ESPACIOS\26\juntos_baseback)
+2024-12-10T05:42:00.702-05:00  INFO 15344 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
+2024-12-10T05:42:03.055-05:00  INFO 15344 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-10T05:42:03.056-05:00  INFO 15344 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-10T05:42:03.150-05:00  INFO 15344 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
+2024-12-10T05:42:03.929-05:00  INFO 15344 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 4.014 seconds (process running for 5.463)
+2024-12-10T06:26:11.009-05:00  INFO 3552 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 3552 (F:\ESPACIOS\26\juntos_baseback\target\classes started by VLADIMIR in F:\ESPACIOS\26\juntos_baseback)
+2024-12-10T06:26:11.012-05:00  INFO 3552 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
+2024-12-10T06:26:12.683-05:00  INFO 3552 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-10T06:26:12.684-05:00  INFO 3552 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-10T06:26:12.757-05:00  INFO 3552 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
+2024-12-10T06:26:13.401-05:00  INFO 3552 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 3.068 seconds (process running for 4.279)
+2024-12-10T06:26:23.190-05:00  INFO 3552 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 3552 (F:\ESPACIOS\26\juntos_baseback\target\classes started by VLADIMIR in F:\ESPACIOS\26\juntos_baseback)
+2024-12-10T06:26:23.191-05:00  INFO 3552 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
+2024-12-10T06:26:23.469-05:00  INFO 3552 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-10T06:26:23.469-05:00  INFO 3552 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-10T06:26:23.508-05:00  INFO 3552 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
+2024-12-10T06:26:23.701-05:00  INFO 3552 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 0.579 seconds (process running for 14.579)
+2024-12-10T06:26:25.549-05:00  INFO 3552 --- [base] [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-10T06:26:28.160-05:00  INFO 3552 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 3552 (F:\ESPACIOS\26\juntos_baseback\target\classes started by VLADIMIR in F:\ESPACIOS\26\juntos_baseback)
+2024-12-10T06:26:28.161-05:00  INFO 3552 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
+2024-12-10T06:26:28.846-05:00  INFO 3552 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-10T06:26:28.846-05:00  INFO 3552 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-10T06:26:28.871-05:00  INFO 3552 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
+2024-12-10T06:26:29.074-05:00  INFO 3552 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 0.943 seconds (process running for 19.953)
+2024-12-10T06:27:38.273-05:00  INFO 17252 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 17252 (F:\ESPACIOS\26\juntos_baseback\target\classes started by VLADIMIR in F:\ESPACIOS\26\juntos_baseback)
+2024-12-10T06:27:38.278-05:00  INFO 17252 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
+2024-12-10T06:27:40.219-05:00  INFO 17252 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-10T06:27:40.220-05:00  INFO 17252 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-10T06:27:40.310-05:00  INFO 17252 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
+2024-12-10T06:27:41.299-05:00  INFO 17252 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 3.718 seconds (process running for 6.149)
+2024-12-10T06:28:06.301-05:00  INFO 17252 --- [base] [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-10T06:28:51.833-05:00  INFO 17252 --- [base] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-10T06:28:52.967-05:00  INFO 17252 --- [base] [http-nio-8081-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6392d898
+2024-12-10T06:28:52.977-05:00  INFO 17252 --- [base] [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-10T06:29:00.857-05:00  INFO 17252 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-10T06:29:00.870-05:00  INFO 17252 --- [base] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-10T06:36:20.662-05:00  INFO 9820 --- [base] [restartedMain] com.base.base.BaseApplication            : Starting BaseApplication using Java 17.0.8.1 with PID 9820 (F:\ESPACIOS\26\juntos_baseback\target\classes started by VLADIMIR in F:\ESPACIOS\26\juntos_baseback)
+2024-12-10T06:36:20.665-05:00  INFO 9820 --- [base] [restartedMain] com.base.base.BaseApplication            : The following 1 profile is active: "local"
+2024-12-10T06:36:22.624-05:00  INFO 9820 --- [base] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-10T06:36:22.625-05:00  INFO 9820 --- [base] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-10T06:36:22.703-05:00  INFO 9820 --- [base] [restartedMain] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring embedded WebApplicationContext
+2024-12-10T06:36:23.388-05:00  INFO 9820 --- [base] [restartedMain] com.base.base.BaseApplication            : Started BaseApplication in 3.389 seconds (process running for 4.326)
+2024-12-10T06:36:33.505-05:00  INFO 9820 --- [base] [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/seguimiento_back/v1]     : Initializing Spring DispatcherServlet 'dispatcherServlet'

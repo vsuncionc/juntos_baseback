@@ -1,5 +1,6 @@
 package com.base.base.util;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -28,4 +29,11 @@ public class Fechas {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("YYYY");
         return now.format(formatter);
     }
+
+    public static Date getStringToDate(String pfecha) throws ParseException {
+        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
+        Date fecha = formato.parse(pfecha);
+        return fecha;
+    }
+
 }

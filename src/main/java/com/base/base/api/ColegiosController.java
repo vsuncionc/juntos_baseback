@@ -149,8 +149,6 @@ public class ColegiosController {
         ResponseAppBean responseAppBean = new ResponseAppBean();
         try {
             responseAppBean.setData(colegioConvert.convertListarPlanColegioDto(colegiosService.listarPlanesPorColegio(codigocolegio)));
-           // List<PlanAnualnstitucion> lista= colegiosService.listarPlanesPorColegio(codigocolegio);
-            //responseAppBean.setData(lista);
             responseAppBean.setStatus(Constante.RESPONSE_OK);
             return new ResponseEntity<>(responseAppBean, HttpStatus.OK);
         }catch (Exception e){
@@ -161,6 +159,8 @@ public class ColegiosController {
         }
 
     }
+
+
 
 
 
