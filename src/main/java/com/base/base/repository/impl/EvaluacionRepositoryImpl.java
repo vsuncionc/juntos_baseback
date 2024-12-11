@@ -14,6 +14,9 @@ import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
+import java.text.ParseException;
+import java.util.Date;
+
 @Slf4j
 @Repository
 @RequiredArgsConstructor
@@ -23,8 +26,7 @@ public class EvaluacionRepositoryImpl implements EvaluacionRepository {
 
     private final NamedParameterJdbcTemplate namedParameterJdbcTemplate;
     @Override
-    public int RegistrarEvaluacion(EvaluacionRequest parametros) {
-
+    public int RegistrarEvaluacion(EvaluacionRequest parametros) throws ParseException {
         StringBuilder sql = new StringBuilder();
         sql.append("INSERT INTO "+ Constante.ESQUEMA+".tcevaluacion(" +
           "CTITULO,CDESCRIPCION,FCREACION,FAPERTURA, " +
@@ -35,8 +37,8 @@ public class EvaluacionRepositoryImpl implements EvaluacionRepository {
         MapSqlParameterSource params = new MapSqlParameterSource();
         params.addValue("P_CTITULO",parametros.getNombre());
         params.addValue("P_CDESCRIPCION",parametros.getDescripcion());
-        params.addValue("P_FAPERTURA", parametros.getFechApertura());
-        params.addValue("P_FCIERRE",parametros.getFechaCierre());
+        params.addValue("P_FAPERTURA", Fechas.getStringToDate(parametros.getFechApertura()));
+        params.addValue("P_FCIERRE",Fechas.getStringToDate(parametros.getFechaCierre()));
         params.addValue("P_NDURACION",parametros.getTiempoDuracion());
         params.addValue("P_CPERIODO",parametros.getPeriodo());
         params.addValue("P_CANIO",parametros.getAnio());

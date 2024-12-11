@@ -12,8 +12,8 @@ import java.util.Date;
 public class EvaluacionRequest {
     private String nombre;
     private String descripcion;
-    private Date fechApertura;
-    private Date fechaCierre;
+    private String fechApertura;
+    private String fechaCierre;
     private int tiempoDuracion;
     private String periodo;
     private String anio;

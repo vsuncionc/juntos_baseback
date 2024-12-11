@@ -1,12 +1,10 @@
 package com.base.base.api;
 
-
 import com.base.base.dto.request.ConsultaPlanAnualRequest;
-import com.base.base.dto.request.EvaluacionRequest;
+import com.base.base.dto.request.PreguntaRequest;
 import com.base.base.model.ResponseAppBean;
-import com.base.base.service.EvaluacionService;
+import com.base.base.service.PreguntaService;
 import com.base.base.util.Constante;
-import com.base.base.util.Fechas;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
@@ -20,25 +18,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping(value = "/evaluacion")
+@RequestMapping(value = "/pregunta")
 @RequiredArgsConstructor
-public class EvaluacionController {
+public class PreguntaController {
 
-    private final EvaluacionService evaluacionService;
+    private final PreguntaService preguntaService;
 
-    @PostMapping(value = "crearevaluacion", produces = "application/json")
-    public ResponseEntity<?> crearEvaluacion(@RequestBody EvaluacionRequest parametros, HttpServletRequest request, HttpServletResponse response) {
+    @PostMapping(value = "crearpregunta", produces = "application/json")
+    public ResponseEntity<?> crearPregunta(@RequestBody PreguntaRequest parametros, HttpServletRequest request, HttpServletResponse response) {
         ResponseAppBean responseAppBean = new ResponseAppBean();
         try {
-            if(parametros.getFechApertura()==null || parametros.getFechApertura().isEmpty()){
-                parametros.setFechApertura(Fechas.getDateString());
-            }
-            if(parametros.getFechaCierre()==null || parametros.getFechaCierre().isEmpty()){
-                parametros.setFechaCierre(Fechas.getDateString());
-            }
 
-
-            int codigo = evaluacionService.RegistrarEvaluacion(parametros);
+            responseAppBean.setData(preguntaService.crearPregunta(parametros));
             responseAppBean.setStatus(Constante.RESPONSE_OK);
             return new ResponseEntity<>(responseAppBean, HttpStatus.OK);
         } catch (Exception e) {
@@ -48,5 +39,4 @@ public class EvaluacionController {
             return new ResponseEntity<>(responseAppBean, HttpStatus.ACCEPTED);
         }
     }
-
 }

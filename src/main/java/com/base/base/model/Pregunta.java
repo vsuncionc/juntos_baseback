@@ -19,5 +19,6 @@ public class Pregunta {
     private String cusucrea;
     private String cusuact;
     private String vigente;
+    private boolean correcta;
 
 }
