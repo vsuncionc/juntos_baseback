@@ -1,5 +1,7 @@
 package base.juntos.base_back.util;
 
 public class Constantes {
-    public static String COD_PERFIL_GEL ="003";
+    public static final String RESPONSE_OK = "1";
+    public static final String RESPONSE_ERROR = "0";
+    public static final String RESPONSE_EXIT = "2";
 }

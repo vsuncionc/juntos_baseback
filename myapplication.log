@@ -80,3 +80,196 @@
 2024-10-26T22:34:23.712-05:00  INFO 24908 --- [base_back] [http-nio-8080-exec-3] b.j.base_back.api.SeguridadController    : Ingreso la pagina princiapl
 2024-10-26T22:35:16.360-05:00  INFO 24908 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-10-26T22:35:16.426-05:00  INFO 24908 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T12:03:38.055-05:00  INFO 26176 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Starting BaseBackApplication using Java 17.0.13 with PID 26176 (E:\ESPACIOS\53\juntos_baseback\target\classes started by vsuncionc in E:\ESPACIOS\53\juntos_baseback)
+2024-12-26T12:03:38.057-05:00  INFO 26176 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : The following 1 profile is active: "local"
+2024-12-26T12:03:39.236-05:00  INFO 26176 --- [base_back] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T12:03:39.236-05:00  INFO 26176 --- [base_back] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-26T12:03:39.277-05:00  INFO 26176 --- [base_back] [restartedMain] o.a.c.c.C.[.[localhost].[/base_back]     : Initializing Spring embedded WebApplicationContext
+2024-12-26T12:03:39.465-05:00  INFO 26176 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T12:04:01.584-05:00 ERROR 26176 --- [base_back] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLRecoverableException: Error de E/S: The Network Adapter could not establish the connection (CONNECTION_ID=9MPRIIggQOqqh8fy2JjTJg==)
+	at oracle.jdbc.driver.T4CConnection.handleLogonNetException(T4CConnection.java:892) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:697) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1047) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:89) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:732) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:648) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160) ~[spring-jdbc-6.1.13.jar:6.1.13]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118) ~[spring-jdbc-6.1.13.jar:6.1.13]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81) ~[spring-jdbc-6.1.13.jar:6.1.13]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:342) ~[spring-jdbc-6.1.13.jar:6.1.13]
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:168) ~[spring-boot-3.2.10.jar:3.2.10]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateDefaultDdlAutoProvider.getDefaultDdlAuto(HibernateDefaultDdlAutoProvider.java:42) ~[spring-boot-autoconfigure-3.2.10.jar:3.2.10]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.lambda$getVendorProperties$1(HibernateJpaConfiguration.java:142) ~[spring-boot-autoconfigure-3.2.10.jar:3.2.10]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateSettings.getDdlAuto(HibernateSettings.java:41) ~[spring-boot-autoconfigure-3.2.10.jar:3.2.10]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineDdlAuto(HibernateProperties.java:118) ~[spring-boot-autoconfigure-3.2.10.jar:3.2.10]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.getAdditionalProperties(HibernateProperties.java:87) ~[spring-boot-autoconfigure-3.2.10.jar:3.2.10]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineHibernateProperties(HibernateProperties.java:80) ~[spring-boot-autoconfigure-3.2.10.jar:3.2.10]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.getVendorProperties(HibernateJpaConfiguration.java:143) ~[spring-boot-autoconfigure-3.2.10.jar:3.2.10]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.entityManagerFactory(JpaBaseConfiguration.java:132) ~[spring-boot-autoconfigure-3.2.10.jar:3.2.10]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.10.jar:3.2.10]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.10.jar:3.2.10]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.10.jar:3.2.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.2.10.jar:3.2.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.2.10.jar:3.2.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.2.10.jar:3.2.10]
+	at base.juntos.base_back.BaseBackApplication.main(BaseBackApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.10.jar:3.2.10]
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection (CONNECTION_ID=9MPRIIggQOqqh8fy2JjTJg==)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:715) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:584) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:964) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:350) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:2441) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:656) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	... 53 common frames omitted
+Caused by: java.io.IOException: Connection timed out: connect, socket connect lapse 21044 ms. 192.168.76.128 1521  30000 (1/1) true
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:425) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.net.nt.TcpNTAdapter.doLocalDNSLookupConnect(TcpNTAdapter.java:307) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:269) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:230) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.net.nt.ConnStrategy.executeConnOption(ConnStrategy.java:1014) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:673) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	... 58 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.connect(Net.java:579) ~[na:na]
+	at java.base/sun.nio.ch.Net.connect(Net.java:586) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853) ~[na:na]
+	at java.base/java.nio.channels.SocketChannel.open(SocketChannel.java:285) ~[na:na]
+	at oracle.net.nt.TimeoutSocketChannel.connect(TimeoutSocketChannel.java:183) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.net.nt.TimeoutSocketChannel.<init>(TimeoutSocketChannel.java:157) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	at oracle.net.nt.TcpNTAdapter.establishSocket(TcpNTAdapter.java:384) ~[ojdbc8-21.9.0.0.jar:21.9.0.0.0]
+	... 63 common frames omitted
+
+2024-12-26T12:04:01.606-05:00  INFO 26176 --- [base_back] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T12:04:01.638-05:00  INFO 26176 --- [base_back] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2024-12-26T12:04:01.659-05:00  INFO 26176 --- [base_back] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T12:04:01.813-05:00  INFO 26176 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T12:04:21.624-05:00  INFO 8488 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Starting BaseBackApplication using Java 17.0.13 with PID 8488 (E:\ESPACIOS\53\juntos_baseback\target\classes started by vsuncionc in E:\ESPACIOS\53\juntos_baseback)
+2024-12-26T12:04:21.626-05:00  INFO 8488 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : The following 1 profile is active: "local"
+2024-12-26T12:04:22.740-05:00  INFO 8488 --- [base_back] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T12:04:22.740-05:00  INFO 8488 --- [base_back] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-26T12:04:22.779-05:00  INFO 8488 --- [base_back] [restartedMain] o.a.c.c.C.[.[localhost].[/base_back/v1]  : Initializing Spring embedded WebApplicationContext
+2024-12-26T12:04:22.962-05:00  INFO 8488 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T12:04:23.105-05:00  INFO 8488 --- [base_back] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3a9dd008
+2024-12-26T12:04:23.107-05:00  INFO 8488 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T12:04:23.129-05:00  INFO 8488 --- [base_back] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T12:04:23.160-05:00  INFO 8488 --- [base_back] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2024-12-26T12:04:23.181-05:00  INFO 8488 --- [base_back] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T12:04:23.388-05:00  WARN 8488 --- [base_back] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2024-12-26T12:04:23.989-05:00  INFO 8488 --- [base_back] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T12:04:26.915-05:00  INFO 8488 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Started BaseBackApplication in 6.629 seconds (process running for 7.006)
+2024-12-26T12:04:51.357-05:00  INFO 8488 --- [base_back] [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T12:04:51.372-05:00  INFO 8488 --- [base_back] [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T12:04:52.503-05:00  INFO 8488 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Starting BaseBackApplication using Java 17.0.13 with PID 8488 (E:\ESPACIOS\53\juntos_baseback\target\classes started by vsuncionc in E:\ESPACIOS\53\juntos_baseback)
+2024-12-26T12:04:52.503-05:00  INFO 8488 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : The following 1 profile is active: "local"
+2024-12-26T12:04:52.799-05:00  INFO 8488 --- [base_back] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T12:04:52.800-05:00  INFO 8488 --- [base_back] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-26T12:04:52.815-05:00  INFO 8488 --- [base_back] [restartedMain] o.a.c.c.C.[.[localhost].[/base_back/v1]  : Initializing Spring embedded WebApplicationContext
+2024-12-26T12:04:52.880-05:00  INFO 8488 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-12-26T12:04:52.901-05:00  INFO 8488 --- [base_back] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection oracle.jdbc.driver.T4CConnection@2f9c7475
+2024-12-26T12:04:52.901-05:00  INFO 8488 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-12-26T12:04:52.902-05:00  INFO 8488 --- [base_back] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T12:04:52.903-05:00  INFO 8488 --- [base_back] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T12:04:52.908-05:00  WARN 8488 --- [base_back] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2024-12-26T12:04:52.931-05:00  INFO 8488 --- [base_back] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T12:04:55.375-05:00  INFO 8488 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Started BaseBackApplication in 3.971 seconds (process running for 35.467)
+2024-12-26T12:04:55.410-05:00  INFO 8488 --- [base_back] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-12-26T12:04:55.418-05:00  INFO 8488 --- [base_back] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-12-26T12:04:56.528-05:00  INFO 8488 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Starting BaseBackApplication using Java 17.0.13 with PID 8488 (E:\ESPACIOS\53\juntos_baseback\target\classes started by vsuncionc in E:\ESPACIOS\53\juntos_baseback)
+2024-12-26T12:04:56.528-05:00  INFO 8488 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : The following 1 profile is active: "local"
+2024-12-26T12:04:56.771-05:00  INFO 8488 --- [base_back] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T12:04:56.771-05:00  INFO 8488 --- [base_back] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-26T12:04:56.795-05:00  INFO 8488 --- [base_back] [restartedMain] o.a.c.c.C.[.[localhost].[/base_back/v1]  : Initializing Spring embedded WebApplicationContext
+2024-12-26T12:04:56.851-05:00  INFO 8488 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-12-26T12:04:56.870-05:00  INFO 8488 --- [base_back] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection oracle.jdbc.driver.T4CConnection@2689aa52
+2024-12-26T12:04:56.871-05:00  INFO 8488 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-12-26T12:04:56.871-05:00  INFO 8488 --- [base_back] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T12:04:56.873-05:00  INFO 8488 --- [base_back] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T12:04:56.877-05:00  WARN 8488 --- [base_back] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2024-12-26T12:04:56.897-05:00  INFO 8488 --- [base_back] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T12:04:59.377-05:00  INFO 8488 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Started BaseBackApplication in 3.932 seconds (process running for 39.469)
+2024-12-26T12:05:18.007-05:00  INFO 8488 --- [base_back] [http-nio-8081-exec-2] o.a.c.c.C.[.[localhost].[/base_back/v1]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T12:05:18.048-05:00  INFO 8488 --- [base_back] [http-nio-8081-exec-2] b.j.base_back.api.RevaluacionController  : Ingreso la pagina princiapl
+2024-12-26T12:05:24.108-05:00  INFO 8488 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-12-26T12:05:24.116-05:00  INFO 8488 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-12-26T12:15:42.683-05:00  INFO 26380 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Starting BaseBackApplication using Java 17.0.13 with PID 26380 (E:\ESPACIOS\53\juntos_baseback\target\classes started by vsuncionc in E:\ESPACIOS\53\juntos_baseback)
+2024-12-26T12:15:42.684-05:00  INFO 26380 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : The following 1 profile is active: "local"
+2024-12-26T12:15:43.923-05:00  INFO 26380 --- [base_back] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T12:15:43.924-05:00  INFO 26380 --- [base_back] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-26T12:15:43.963-05:00  INFO 26380 --- [base_back] [restartedMain] o.a.c.c.C.[.[localhost].[/base_back/v1]  : Initializing Spring embedded WebApplicationContext
+2024-12-26T12:15:44.152-05:00  INFO 26380 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T12:15:44.313-05:00  INFO 26380 --- [base_back] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3172f330
+2024-12-26T12:15:44.315-05:00  INFO 26380 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T12:15:44.337-05:00  INFO 26380 --- [base_back] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T12:15:44.370-05:00  INFO 26380 --- [base_back] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2024-12-26T12:15:44.390-05:00  INFO 26380 --- [base_back] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T12:15:44.614-05:00  WARN 26380 --- [base_back] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2024-12-26T12:15:45.207-05:00  INFO 26380 --- [base_back] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T12:15:48.079-05:00  INFO 26380 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Started BaseBackApplication in 6.719 seconds (process running for 7.148)
+2024-12-26T12:15:48.122-05:00  INFO 26380 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T12:15:48.131-05:00  INFO 26380 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T12:24:26.063-05:00  INFO 30320 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Starting BaseBackApplication using Java 17.0.13 with PID 30320 (E:\ESPACIOS\53\juntos_baseback\target\classes started by vsuncionc in E:\ESPACIOS\53\juntos_baseback)
+2024-12-26T12:24:26.064-05:00  INFO 30320 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : The following 1 profile is active: "local"
+2024-12-26T12:24:27.111-05:00  INFO 30320 --- [base_back] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T12:24:27.111-05:00  INFO 30320 --- [base_back] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-26T12:24:27.146-05:00  INFO 30320 --- [base_back] [restartedMain] o.a.c.c.C.[.[localhost].[/base_back/v1]  : Initializing Spring embedded WebApplicationContext
+2024-12-26T12:24:27.323-05:00  INFO 30320 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T12:24:27.452-05:00  INFO 30320 --- [base_back] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@59f7d31f
+2024-12-26T12:24:27.454-05:00  INFO 30320 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T12:24:27.476-05:00  INFO 30320 --- [base_back] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T12:24:27.504-05:00  INFO 30320 --- [base_back] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2024-12-26T12:24:27.523-05:00  INFO 30320 --- [base_back] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T12:24:27.719-05:00  WARN 30320 --- [base_back] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2024-12-26T12:24:28.240-05:00  INFO 30320 --- [base_back] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T12:24:31.074-05:00  INFO 30320 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Started BaseBackApplication in 6.321 seconds (process running for 6.681)
+2024-12-26T12:24:37.601-05:00  INFO 30320 --- [base_back] [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/base_back/v1]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T12:24:40.822-05:00  INFO 30320 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T12:24:40.831-05:00  INFO 30320 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-26T12:25:53.675-05:00  INFO 6724 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Starting BaseBackApplication using Java 17.0.13 with PID 6724 (E:\ESPACIOS\53\juntos_baseback\target\classes started by vsuncionc in E:\ESPACIOS\53\juntos_baseback)
+2024-12-26T12:25:53.676-05:00  INFO 6724 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : The following 1 profile is active: "local"
+2024-12-26T12:25:54.728-05:00  INFO 6724 --- [base_back] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T12:25:54.728-05:00  INFO 6724 --- [base_back] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-26T12:25:54.766-05:00  INFO 6724 --- [base_back] [restartedMain] o.a.c.c.C.[.[localhost].[/base_back/v1]  : Initializing Spring embedded WebApplicationContext
+2024-12-26T12:25:54.932-05:00  INFO 6724 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-26T12:25:55.066-05:00  INFO 6724 --- [base_back] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1f4e9c38
+2024-12-26T12:25:55.067-05:00  INFO 6724 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-26T12:25:55.089-05:00  INFO 6724 --- [base_back] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T12:25:55.116-05:00  INFO 6724 --- [base_back] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2024-12-26T12:25:55.135-05:00  INFO 6724 --- [base_back] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-26T12:25:55.332-05:00  WARN 6724 --- [base_back] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 11.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2024-12-26T12:25:55.846-05:00  INFO 6724 --- [base_back] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T12:25:58.696-05:00  INFO 6724 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Started BaseBackApplication in 6.345 seconds (process running for 6.71)
+2024-12-26T12:25:59.769-05:00  INFO 6724 --- [base_back] [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/base_back/v1]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T12:28:13.319-05:00  INFO 6724 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-26T12:28:13.328-05:00  INFO 6724 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
