@@ -25,7 +25,6 @@ public class RevaluacionDtoConvert {
                  revaluacion.getDescripcion(),
                  revaluacion.getEstado(),
                  revaluacion.getCantidadHogares(),
-                 revaluacion.getAbonoGnerado(),
                  revaluacion.getTipoPago(),
                  revaluacion.getTipoEsquema()
    );
@@ -82,13 +81,14 @@ public class RevaluacionDtoConvert {
     public RevaluacionPadron convertRevaluacionPadronDto(RevaluacionPadron parametro){
      return new RevaluacionPadron(
              parametro.getItem(),
-             parametro.getCodigoRevaluacion(),
+             parametro.getId(),
              parametro.getTipoEsquema(),
              parametro.getExpediente(),
              parametro.getDocumento(),
              parametro.getFechaProceso(),
              parametro.getCodigoPadron(),
-             parametro.getCantidadHogares()
+             parametro.getCantidadHogares(),
+             parametro.getDescripcion()
      );
     }
 

@@ -21,9 +21,9 @@ public class ResultadoRevaluacion {
     private String expediente;
     @Column(name = "X_DOCUMENTO")
     private String documento;
-    @Column(name = "FECHADOC")
+    @Column(name = "FECHA_DOC")
     private String fechaDocumento;
-    @Column(name = "FECHAPROC")
+    @Column(name = "FECHA_PROC")
     private String fechaProceso;
     @Column(name = "X_DESCRIPCION")
     private String descripcion;
@@ -32,11 +32,8 @@ public class ResultadoRevaluacion {
     @Column(name = "N_HOGARES")
     private int cantidadHogares;
     @Column(name = "ABONO_GENERADO")
-    private String abonoGnerado;
-    @Column(name = "DESPADRONPAGO")
     private String tipoPago;
-    @Column(name = "GRUPOESQUEMA")
+    @Column(name = "DESESQUEMA")
     private String tipoEsquema;
-
 
 }

@@ -19,7 +19,7 @@ public class RevaluacionPadron {
     @Column(name = "ITEM")
     private long item;
     @Column(name = "IDREEVALUACION")
-    private long codigoRevaluacion;
+    private long id;
     @Column(name = "TIPO")
     private String tipoEsquema;
     @Column(name = "X_EXPEDIENTE")
@@ -32,4 +32,6 @@ public class RevaluacionPadron {
     private String codigoPadron;
     @Column(name = "CANT_HOGAR")
     private int cantidadHogares;
+    @Column(name = "X_DESCRIPCION")
+    private String descripcion;
 }

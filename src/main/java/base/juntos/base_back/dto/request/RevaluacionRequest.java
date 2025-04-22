@@ -9,8 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class RevaluacionRequest {
     long codigoRevaluacion;
-    String  expediente;
-    String  documento;
-    String  descripcion;
-    Integer grupoesquema;
+    String  tipobusqueda;
+    String  criterio;
+    String grupoesquema;
 }

@@ -10,7 +10,6 @@ public record RevaluacionResponse (
  String descripcion,
  String estado,
  int cantidadHogares,
- String abonoGnerado,
  String tipoPago,
  String tipoEsquema
 ){
