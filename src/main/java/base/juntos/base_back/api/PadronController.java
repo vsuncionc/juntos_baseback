@@ -4,8 +4,7 @@ import base.juntos.base_back.convert.RevaluacionDtoConvert;
 import base.juntos.base_back.dto.request.*;
 import base.juntos.base_back.dto.response.GeneracionCierrePadronResponse;
 import base.juntos.base_back.dto.response.GeneracionPadronResponse;
-import base.juntos.base_back.dto.response.GeneracionPreCierreResponse;
-import base.juntos.base_back.model.HogaresValPreCierreTodos;
+import base.juntos.base_back.dto.response.GeneracionPreCierreResponse; 
 import base.juntos.base_back.model.InformacionCabeceraPreCierre;
 import base.juntos.base_back.model.ResponseAppBean;
 import base.juntos.base_back.service.GenerarExcelService;
@@ -64,7 +63,7 @@ public class PadronController {
         try {
             Map<Integer, String> datos = padronService.ProcesarPadron(parametros);
             for (Map.Entry<Integer, String> info : datos.entrySet()) {
-                log.error("clave=" + info.getKey() + ", valor=" + info.getValue());
+                log.info("clave=" + info.getKey() + ", valor=" + info.getValue());
                 if (info.getKey() == 1) { // CODIGO PADRON
                    // codigopadron = info.getValue();
                     codigopadron.add(0,new GeneracionPadronResponse(Long.parseLong(info.getValue())));
@@ -172,7 +171,7 @@ public class PadronController {
 
             Map<Integer, String> datos = padronService.ProcesarPreCierre(parametros);
             for (Map.Entry<Integer, String> info : datos.entrySet()) {
-                log.error("clave=" + info.getKey() + ", valor=" + info.getValue());
+                log.info("clave=" + info.getKey() + ", valor=" + info.getValue());
                 if (info.getKey() == 1) { // CODIGO PADRON
                     mensaje=info.getValue();
                     respuesta = info.getValue();
@@ -327,7 +326,7 @@ public class PadronController {
         PadronPreCierreRequest   parametros = new PadronPreCierreRequest();
         parametros.setCodigoPreValidacionHogar(id);
          var resource = generarExcelService.listaHogaresAptos(parametros);
-            String nombreArchivo = FechasUtilitarios.obtenerFechaHoraJunto();
+            String nombreArchivo = FechasUtilitarios.obtenerFechaHoraJuntoTablon("CIERRE");
      return  ResponseEntity.ok()
              .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename="+nombreArchivo)
              .body(resource);

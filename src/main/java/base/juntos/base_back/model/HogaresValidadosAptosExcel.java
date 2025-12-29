@@ -68,4 +68,6 @@ public class HogaresValidadosAptosExcel {
     private String cuenta;
     @Column(name = "ESTADOCUENTA")
     private String estadoCuenta;
+    @Column(name = "IDREEVALUACION")
+    private String idRevaluacion;
 }

@@ -23,9 +23,10 @@ public class authController {
     public ResponseEntity<?> login(@RequestBody UsuarioLogin parametros) {
         ResponseAppBean responseAppBean = new ResponseAppBean();
         try {
-            if(parametros.getUsername().equals("VSUNCION")){
+            if(parametros.getUsername().equals("eascencio")
+                    && parametros.getPassword().equals("Juntos2020")){
                 UsuarioLogeadoResponse info = new UsuarioLogeadoResponse();
-                info.setNombre("VLADIMIR SUNCION");
+                info.setNombre("ELIZABETH");
                 responseAppBean.setData(info);
                 responseAppBean.setStatus(Constantes.RESPONSE_OK);
                 responseAppBean.setToken("123456789");

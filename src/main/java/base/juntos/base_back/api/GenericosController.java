@@ -1,7 +1,7 @@
 package base.juntos.base_back.api;
 
 
-import base.juntos.base_back.model.CombosGenerico;
+
 import base.juntos.base_back.model.ResponseAppBean;
 import base.juntos.base_back.service.GenericoService;
 import base.juntos.base_back.util.Constantes;

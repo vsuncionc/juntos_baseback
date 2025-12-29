@@ -2,7 +2,7 @@ server:
   # Puerto del servidor
   port: 8081
   servlet:
-    context-path: /base_back/v1/rest/
+    context-path: /revisionposterior_back/
 spring:
   application:
     name: base
@@ -11,25 +11,31 @@ spring:
     main:
       banner-mode: off
 
-
+ #DESARROLLO
   datasource:
-    url: jdbc:oracle:thin:@192.168.125.8:1521/juntosqa
-    username: SITC_WEB
-    password: JUNTOS2050
+    url: jdbc:oracle:thin:@192.168.125.181:1521:juntosdv
+    username: VSUNCION
+    password: chama2025
     driver-class-name: oracle.jdbc.OracleDriver
 
-
+#DESARROLLO
     #datasource:
-    # url: jdbc:oracle:thin:@192.168.125.195:1521/juntos
-    #username: GEO_WEB
-    #password: GeowEB852@
+    #url: jdbc:oracle:thin:@192.168.125.8:1521:juntosqa
+    #username: SITC_WEB
+    #password: JUNTOS2050
+    #driver-class-name: oracle.jdbc.OracleDriver
+  #CALIDAD
+    #datasource:
+    #url: jdbc:oracle:thin:@192.168.125.80:1521/juntos
+    #username: SITC_WEB
+    #password: Jcalidad2024$
     #driver-class-name: oracle.jdbc.OracleDriver
 
-    #datasource:
-    #jndi-name: jdbc/georeferencia
-    #driver-class-name: oracle.jdbc.OracleDriver
+  #datasource:
+   #jndi-name: jdbc/revisionposteriordes
+   #driver-class-name: oracle.jdbc.OracleDriver
 
-    #datasource:
+  #datasource:
     #jndi-name: jdbc/georeferenciacalidad
     #driver-class-name: oracle.jdbc.OracleDriver
 
@@ -42,7 +48,7 @@ logging:
 
 security:
   enabled: true
-  allowed-urls-origin: http://localhost:4200,http://localhost:4300,http://192.168.125.249:8080,http://172.16.15.91:8080,http://192.168.56.1:8181,http://192.168.56.1:8080,http://172.29.48.1:7001,https://c.tile.openstreetmap.org,https://unpkg.com,http://localhost:8080
+  allowed-urls-origin: http://localhost:4200,http://localhost:4300,http://192.168.125.249:8080,http://172.16.15.91:8080,http://192.168.56.1:8181,http://192.168.56.1:8080,http://172.29.48.1:7001,https://c.tile.openstreetmap.org,https://unpkg.com,http://localhost:8080,http://localhost:8081
 
   exclude-path-patterns:
     /**/openapi/**,

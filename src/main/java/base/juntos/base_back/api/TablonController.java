@@ -43,7 +43,7 @@ public class TablonController {
     @GetMapping(value = "/generarexceltablon")
     public ResponseEntity<?> generarExcelTablon(@RequestParam("id") Long id) throws IOException {
         var resource = generarExcelService.reporteTablon(id);
-        String nombreArchivo = FechasUtilitarios.obtenerFechaHoraJunto();
+        String nombreArchivo = FechasUtilitarios.obtenerFechaHoraJuntoTablon("REPORTE_HOGARES_APTOS");
         return  ResponseEntity.ok()
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename="+nombreArchivo)
                 .body(resource);

@@ -2,8 +2,7 @@ package base.juntos.base_back.repository.Impl;
 
 import base.juntos.base_back.dto.request.TablonBuscarRequest;
 import base.juntos.base_back.model.HogaresTablonExcel;
-import base.juntos.base_back.model.HogaresValidadosAptosExcel;
-import base.juntos.base_back.model.ResultadoRevaluacion;
+import base.juntos.base_back.model.MiembrosObjetivosHogar;
 import base.juntos.base_back.model.TablonCierrePadron;
 import base.juntos.base_back.repository.TablonRepository;
 import base.juntos.base_back.util.Constantes;
@@ -22,9 +21,6 @@ import java.util.List;
 public class TablonRepositoryImpl implements TablonRepository {
 
     private final EntityManager entityManager;
-
-    private String nombreEsquema ="SITC";
-
 
     @Override
     public List<TablonCierrePadron> listaTablones(TablonBuscarRequest parametros) {
@@ -51,4 +47,17 @@ public class TablonRepositoryImpl implements TablonRepository {
         sp.execute();
         return sp.getResultList();
     }
+
+    @Override
+    public List<MiembrosObjetivosHogar> listaMoHogares(Long id) {
+        var sp = entityManager
+                .createStoredProcedureQuery(Constantes.ESQUEMA_SITC +"."+Constantes.PAQUETE_TIM_REVPOST+".TTIM_TTIM_LISMOCIERRE", MiembrosObjetivosHogar.class)
+                .registerStoredProcedureParameter("C_MO",Class.class,ParameterMode.REF_CURSOR)
+                .registerStoredProcedureParameter("P_ID_PREVALHOGAR",Long.class,ParameterMode.IN)
+                .setParameter("P_ID_PREVALHOGAR",id);
+        sp.execute();
+        return sp.getResultList();
+    }
+
+
 }

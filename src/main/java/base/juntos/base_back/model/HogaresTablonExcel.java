@@ -54,20 +54,31 @@ public class HogaresTablonExcel {
     private String documento;
     @Column(name = "ID_CORTE")
     private long idcorte;
-   @Column(name = "COD_PERIODO")
+    @Column(name = "COD_PERIODO")
     private String codigoPeriodo;
     @Column(name = "CUMPLIMIENTO")
     private int cumplimiento;
-   @Column(name = "CUMPLIMIENTO_EVALUADO")
+    @Column(name = "CUMPLIMIENTO_EVALUADO")
     private String cumplimientoEvaluado;
-     @Column(name = "MESES")
+    @Column(name = "MESES")
     private String meses;
-    @Column(name = "CODESTADOHOGAR")
+    @Column(name = "ESTADOHOGAR")
     private String estadoHogar;
     @Column(name = "CUENTA")
     private String cuenta;
-    @Column(name = "ESTADOCUENTA")
+    @Column(name = "ESTADO_CUENTA")
     private String estadoCuenta;
     @Column(name = "OBSERVACION")
     private String observacion;
+    @Column(name = "IDREEVALUACION")
+    private long idRevaluacion;
+    @Column(name = "CODPUNTOPAGOBANCO")
+    private long codigoPuntoPagoBanco;
+    @Column(name = "LUGARPUNTO")
+    private String lugarPuntoPago;
+    @Column(name = "DIRECCION")
+    private String direccionPuntoPago;
+   @Column(name = "MODALIDADPAGO")
+   private String modalidadPuntoPago;
+
 }

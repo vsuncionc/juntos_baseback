@@ -2,7 +2,7 @@ package base.juntos.base_back.service.impl;
 
 import base.juntos.base_back.dto.request.TablonBuscarRequest;
 import base.juntos.base_back.model.HogaresTablonExcel;
-import base.juntos.base_back.model.HogaresValidadosAptosExcel;
+import base.juntos.base_back.model.MiembrosObjetivosHogar;
 import base.juntos.base_back.model.TablonCierrePadron;
 import base.juntos.base_back.repository.TablonRepository;
 import base.juntos.base_back.service.TablonService;
@@ -25,5 +25,10 @@ public class TablonServiceImpl implements TablonService {
     @Override
     public List<HogaresTablonExcel> listadoTablonExcel(Long id) {
         return tablonRepository.reporteTablon(id);
+    }
+
+    @Override
+    public List<MiembrosObjetivosHogar> listaMoHogares(Long id) {
+        return tablonRepository.listaMoHogares(id);
     }
 }

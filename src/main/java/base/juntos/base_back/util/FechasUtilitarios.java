@@ -45,4 +45,13 @@ public class FechasUtilitarios {
         nombreArchivo = "PADRON_"+nombreArchivo+randomNumbers.nextInt()+".xlsx";
         return nombreArchivo;
     }
+    
+    public static String obtenerFechaHoraJuntoTablon(String nombre) {
+        Random randomNumbers = new Random();
+        LocalDateTime now = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        String nombreArchivo = now.format(formatter);
+        nombreArchivo = nombre+"_"+nombreArchivo+randomNumbers.nextInt()+".xlsx";
+        return nombreArchivo;
+    }
 }
