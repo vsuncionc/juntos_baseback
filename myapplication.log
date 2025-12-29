@@ -33,3 +33,61 @@
 2025-12-29T11:29:53.644-05:00  INFO 4872 --- [base_back] [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/revisionposterior_back]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-12-29T15:45:06.275-05:00  INFO 4872 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-12-29T15:45:06.295-05:00  INFO 4872 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-29T16:28:45.391-05:00  INFO 21428 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Starting BaseBackApplication using Java 17.0.13 with PID 21428 (E:\ESPACIOS\88\juntos_baseback\target\classes started by vsuncionc in E:\ESPACIOS\88\juntos_baseback)
+2025-12-29T16:28:45.392-05:00  INFO 21428 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : The following 1 profile is active: "local"
+2025-12-29T16:28:46.453-05:00  INFO 21428 --- [base_back] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-29T16:28:46.454-05:00  INFO 21428 --- [base_back] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-29T16:28:46.488-05:00  INFO 21428 --- [base_back] [restartedMain] o.a.c.c.C.[.[.[/revisionposterior_back]  : Initializing Spring embedded WebApplicationContext
+2025-12-29T16:28:46.659-05:00  INFO 21428 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-29T16:28:46.807-05:00  INFO 21428 --- [base_back] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@58646deb
+2025-12-29T16:28:46.808-05:00  INFO 21428 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-29T16:28:46.828-05:00  INFO 21428 --- [base_back] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-29T16:28:46.857-05:00  INFO 21428 --- [base_back] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2025-12-29T16:28:46.875-05:00  INFO 21428 --- [base_back] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-29T16:28:47.736-05:00  INFO 21428 --- [base_back] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-29T16:28:50.604-05:00  INFO 21428 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Started BaseBackApplication in 6.548 seconds (process running for 6.941)
+2025-12-29T16:29:22.281-05:00  INFO 21428 --- [base_back] [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-29T16:29:22.295-05:00  INFO 21428 --- [base_back] [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-29T16:29:23.448-05:00  INFO 21428 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Starting BaseBackApplication using Java 17.0.13 with PID 21428 (E:\ESPACIOS\88\juntos_baseback\target\classes started by vsuncionc in E:\ESPACIOS\88\juntos_baseback)
+2025-12-29T16:29:23.448-05:00  INFO 21428 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : The following 1 profile is active: "local"
+2025-12-29T16:29:23.712-05:00  INFO 21428 --- [base_back] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-29T16:29:23.712-05:00  INFO 21428 --- [base_back] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-29T16:29:23.734-05:00  INFO 21428 --- [base_back] [restartedMain] o.a.c.c.C.[.[.[/revisionposterior_back]  : Initializing Spring embedded WebApplicationContext
+2025-12-29T16:29:23.795-05:00  INFO 21428 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-12-29T16:29:23.832-05:00  INFO 21428 --- [base_back] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection oracle.jdbc.driver.T4CConnection@77cf2f79
+2025-12-29T16:29:23.832-05:00  INFO 21428 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-12-29T16:29:23.833-05:00  INFO 21428 --- [base_back] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-29T16:29:23.835-05:00  INFO 21428 --- [base_back] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-29T16:29:23.852-05:00  INFO 21428 --- [base_back] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-29T16:29:26.428-05:00  INFO 21428 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Started BaseBackApplication in 4.081 seconds (process running for 42.84)
+2025-12-29T16:29:26.485-05:00  INFO 21428 --- [base_back] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-12-29T16:29:26.499-05:00  INFO 21428 --- [base_back] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-12-29T16:29:27.637-05:00  INFO 21428 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Starting BaseBackApplication using Java 17.0.13 with PID 21428 (E:\ESPACIOS\88\juntos_baseback\target\classes started by vsuncionc in E:\ESPACIOS\88\juntos_baseback)
+2025-12-29T16:29:27.637-05:00  INFO 21428 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : The following 1 profile is active: "local"
+2025-12-29T16:29:27.863-05:00  INFO 21428 --- [base_back] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-29T16:29:27.864-05:00  INFO 21428 --- [base_back] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-29T16:29:27.878-05:00  INFO 21428 --- [base_back] [restartedMain] o.a.c.c.C.[.[.[/revisionposterior_back]  : Initializing Spring embedded WebApplicationContext
+2025-12-29T16:29:27.937-05:00  INFO 21428 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-12-29T16:29:27.971-05:00  INFO 21428 --- [base_back] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection oracle.jdbc.driver.T4CConnection@7c0c13f
+2025-12-29T16:29:27.971-05:00  INFO 21428 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-12-29T16:29:27.972-05:00  INFO 21428 --- [base_back] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-29T16:29:27.974-05:00  INFO 21428 --- [base_back] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-29T16:29:28.138-05:00  INFO 21428 --- [base_back] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-29T16:29:30.685-05:00  INFO 21428 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Started BaseBackApplication in 4.144 seconds (process running for 47.106)
+2025-12-29T16:31:49.068-05:00  INFO 21428 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-12-29T16:31:49.083-05:00  INFO 21428 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-12-29T16:31:57.374-05:00  INFO 10732 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Starting BaseBackApplication using Java 17.0.13 with PID 10732 (E:\ESPACIOS\88\juntos_baseback\target\classes started by vsuncionc in E:\ESPACIOS\88\juntos_baseback)
+2025-12-29T16:31:57.375-05:00  INFO 10732 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : The following 1 profile is active: "local"
+2025-12-29T16:31:58.398-05:00  INFO 10732 --- [base_back] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-29T16:31:58.399-05:00  INFO 10732 --- [base_back] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-29T16:31:58.477-05:00  INFO 10732 --- [base_back] [restartedMain] o.a.c.c.C.[.[.[/revisionposterior_back]  : Initializing Spring embedded WebApplicationContext
+2025-12-29T16:31:58.660-05:00  INFO 10732 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-29T16:31:58.806-05:00  INFO 10732 --- [base_back] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2dd53500
+2025-12-29T16:31:58.807-05:00  INFO 10732 --- [base_back] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-29T16:31:58.828-05:00  INFO 10732 --- [base_back] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-29T16:31:58.854-05:00  INFO 10732 --- [base_back] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.10.Final
+2025-12-29T16:31:58.873-05:00  INFO 10732 --- [base_back] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-29T16:31:59.731-05:00  INFO 10732 --- [base_back] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-29T16:32:02.601-05:00  INFO 10732 --- [base_back] [restartedMain] b.juntos.base_back.BaseBackApplication   : Started BaseBackApplication in 6.553 seconds (process running for 6.912)
+2025-12-29T16:32:02.656-05:00  INFO 10732 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-29T16:32:02.673-05:00  INFO 10732 --- [base_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
